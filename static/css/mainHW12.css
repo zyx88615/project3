@@ -1,0 +1,83 @@
+.navbar {
+	background-color: black;
+	color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+.btn {
+    text-align: center;
+}
+
+h1.m2m {
+    font-size: 70px;
+    font-family: Tahoma;
+}
+.weather {
+    border: 2px solid lightgray;  
+}
+.hemisphere {
+    border: 2px solid lightgray;
+}
+.picturesRight {
+    margin-right: 0px;
+}
+.blurbLeft{
+    margin-left: 150px;
+}
+.picturesLeft {
+    margin-left: 150px;
+}
+.picturesLeft2 {
+	margin-left: 150px;
+	margin-right: 50px;
+}
+.blurbRight{
+    margin-left: 0px;
+}
+.visualizations img:hover, .comparisons img:hover{
+	border: 2px solid navy;
+}
+
+.flourishHover {
+	position: relative;
+	display: inline-block;
+}
+
+.flourishHover .vizTop{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.flourishHover:hover .vizTop{
+	display: inline;
+	opacity: 0.85;
+
+}
+.vizThumb{
+	width: 140px;
+	height: 100px;
+}
+.visualizations {
+	margin-top: 30px;
+	margin-right: 50px;
+	background-color: #ffff;
+	text-align: center;
+}
+
+.vizAlign {
+	text-align: center;
+}
+
+.vizImages {
+	width: 600px;
+	height: auto;
+}
+
+.arrow{
+	width: 100px;
+	height: auto;
+}

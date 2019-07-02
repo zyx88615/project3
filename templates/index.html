@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <title>GDP vs. Quality of Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/mainHW12.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../static/images/moneyhapp.jpg">
+        <h1 class="m2m font-weight-bold"><center>Can Money Buy Happiness?</center></h1>
+        <h2 class="font-weight-bold"><center><u>The Relationship Between GDP and Quality of Life</u></center></h2>
+        <br>
+        <!-- <button class="btn-primary">Make It Rain!</button>     -->
+    </nav>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 blurbLeft">
+                <br><br><br><br>
+                <!-- start slipsum code -->
+                <p> We found that GDP per capita does usually couple with a better life. However this is not always true especially between rich countries. Amongst developing nations there can also be large differences. Russia and Mexico have a very similar GDP per capita index 8.9k and 8.8k respectively yet Russia has a 49-point deficit on quality of life. Unsurprisingly there are other factors at play here.</p>
+                    <p>Also look at United States and Canada. They are in the same scale for quality of life index, but GDP per capita in USA is a couple scales higher than Canada. From 2012-2016 most countries improve a little on both quality of life and GDP per capita. There are few nice surprises such as China tripling its quality of life score while increasing its GDP per capita by 28%.</p>
+                    <p>So does higher GDP per capita indicate higher quality of life? The answer is mostly yes - BUT they are not always parallel.     
+                    Click on the map to the right to see your country and year of choice!</p>
+                
+            </div>
+            <div class="col-md-4 picturesRight">
+                    <div class="container-fluid col-md-12">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body">
+                                <h3><center>Choropleth Map - GDP vs. Quality of Life</center></h3>
+                                <a href="/choropleth"><img src="../static/images/map_preview.PNG" class="img-fluid img-responsive" align="right"></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br><br><hr><br>
+        <div class="row">
+                <div class="col-md-4 picturesLeft">
+                        <div class="container-fluid col-md-12">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body p-1">
+                                    <h3><center>Scatter Plot - GDP vs. Quality of Life</center></h3>
+                                    <a href="/plotly"><img src="../static/images/scatter_preview.PNG" class="img-fluid img-responsive" align="right"></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-6 blurbRight">
+                        <br><br><br>
+                        <p>We see a large jump in 2016 probably due to a strengthening US economy and a general rally in most stock markets.</p>
+                        <p>Noteworthy countries in this chart are China and India with once great strides on quality of life.  China jumped 83 points from 2015-2016. India improved by 30 points. The Asian average QLI 48 in 2012 and 112 in 2016 a 48 point increase.</p>
+                        <p>The average QLI for all countries in 2012 was 77 and in 2016 it was 145. This increase in our data is not only due to strength. The 68-point increase due to the data dropping some of the low qii nations in 2016).</p>
+                        <p>In 2012, bubbles are spread out. However, as we slide the year to 2016 (play chart), the continents aggregate in the higher quality of life while slope is not getting any steeper. Overall the world has been moving in a positive direction. </p>
+                        <p>Click on the picture to the left to see the model. Feel free to use the widget on the bottom to change the year and the menu on the right to select continents.</p>
+
+                        <!-- end slipsum code -->
+                </div>
+        </div>
+        <br><br><hr><br>
+        <div class="row">
+                <div class="col-md-6 blurbLeft">
+                    <br><br><br><br><br><br>
+                    <!-- start slipsum code -->
+                    <p>For a third way to compare countries and GDP per capita over time we used Flourish to make a running bar chart. We can more clearly see the high GDP per capita and high quality of life index and how they differ.</p>
+                    <p>Some interesting observations are Qatar and Singapore both have higher GDP per capita than USA or Denmark. However, you don’t see Qatar or Singapore in the top 10 for quality of life. </p>
+                    <p>Also the change is not proportional. Increasing GDP per capita does not lead to even close of the same increases in quality of life. A good example it the delta of the riches to bottom 10 countries is vastly different.  Over 30% increase in GDP, however, the delta is less than 10% for quality of life. </p>
+                    <p>Click on the picture on the right to see the running charts! </p>
+
+                    <!-- end slipsum code -->
+                </div>
+                <div class="col-md-4 picturesRight">
+                    <div class="container-fluid col-md-12">
+                        <div class="card-list visualizations" style="align-content: center">
+                            <div class="flourishHover clickableImg">
+                                <h3><center>Animated Bar Charts</center></h3> <br>
+                                <img src="../static/images/flourish.PNG" class="img-fluid img-responsive" data-toggle="modal" data-target="#flourish">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="flourish" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalLabel"><center>FLOURISH ANIMATION GRAPHS</center></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <div class="card col-md-4" style="width: 18rem;">
+                                    <img class="card-img-top vizThumb img-fluid img-responsive" src="../static/images/GDP.png" alt="Card image cap">
+                                        
+                                        <div class="card-body">
+                                            <h5 class="card-title"</h5><strong>GDP 2012-17</strong></h5>
+                                            <p class="card-text">GDP per capita is income for an entire economy divided by it’s population. It’s frequently cited when assessing standard of living.</p>
+                                            <br><br>
+                                            <center><a href="/GDPRaceChart" class="btn btn-primary">Run GDP</a></center>
+                                        </div>
+                                </div>
+                                
+                                <div class="card col-md-4" style="width: 18rem;">
+                                    <img class="card-img-top vizThumb img-fluid img-responsive" src="../static/images/flourish.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>GDP:QoL Ratios</strong></h5>
+                                            <p class="card-text">Combination score is a ratio that multiplied both GDP per capita and Quality of life index and divided by the highest score of that year.</p>
+                                            <br><br><br>
+                                            <a href="/CombineRaceChart" class="btn btn-primary">Run GDP/QoL Ratio</a>
+                                        </div>
+                                </div>
+                                
+                                <div class="card col-md-4" style="width: 18rem;" text-align="center">
+                                    <img class="card-img-top vizThumb img-fluid img-responsive" src="../static/images/QoL.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>QoL Index 2012-17</strong></h5>
+                                            <p class="card-text">Quality of Life Index by Numbeo is an overall score of living conditions including cost of living, housing indicators, health care, traffic, crime and pollution.</p>
+                                            <br>
+                                            <center><a href="/QLIRaceChart" class="btn btn-primary">Run QoL</a></center>
+                                        </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="modal-footer">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><br></bt><br><hr><br>
+                    </div>
+                    <div class="col-md-4 picturesLeft2">
+                        <div class="container-fluid col-md-12">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body p-1">
+                                    <br><br>
+                                    <h3><center>GDP vs. Quality of Life: By Country</center></h3>
+                                    <br><br>
+                                    <a href="/chart"><img src="../static/images/compchart.PNG" class="img-fluid img-responsive" align="left"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-5 blurbRight">
+                        <br><br><br><br><br><br><br>
+                        <!-- start slipsum code -->
+                        <h4> Click here to see bar graph comparisons of GDP vs. Quality of life (by country)</h4>
+                        <center><img src="../static/images/arrow.jpg" class="arrow"></center>
+                    </div>                     
+                </div>                                                                                                         
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>d3.select(".clickableImg")
+        .on("click", function() {
+            console.log("test");
+            d3.selectAll(".modal")
+                .classed("hidden", false);
+        });        
+            </script>
+</body>
+</html>
